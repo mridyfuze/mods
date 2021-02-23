@@ -64,14 +64,17 @@ module.exports = {
     // Place your mod here.
     mod: function(DBS, message, action, args, command, index) {
         switch(action.info) {
-            case "memberCount":
-                DBS.BetterMods.saveVar(action.vartype, action.storeresult, message.guild.memberCount, message.guild);
+            case "Username":
+                DBS.BetterMods.saveVar(action.vartype, action.storeresult, message.guild.Username, message.guild);
             break
-            case "serverIcon":
-                DBS.BetterMods.saveVar(action.vartype, action.storeresult, message.guild.iconURL(), message.guild);
+            case "Userid":
+                DBS.BetterMods.saveVar(action.vartype, action.storeresult, message.guild.Userid(), message.guild);
             break
-            case "guildCreated":
+            case "AccountCreated":
                 DBS.BetterMods.saveVar(action.vartype, action.storeresult, message.guild.createdAt, message.guild);
+            break
+            case "UserStatus":
+                DBS.BetterMods.saveVar(action.vartype, action.storeresult, message.guild.UserStatus, message.guild);
             break
         };
 
