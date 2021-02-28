@@ -13,10 +13,10 @@ module.exports = {
     changelog: "Edited the Wait mod, removed wait message and moved to bot actions",
 
     // Set this to true if this will be an event.
-    isEvent: false,
+    isEvent: true,
 
     // Set this to true if this is a response.
-    isResponse: true,
+    isResponse: false,
 
     // Set this to true if this will be a response mod.
     isMod: true,
